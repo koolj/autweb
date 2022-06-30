@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SuiteDatadriven" thread-count="1" parallel="tests">
+	<test name="1">
+		<parameter name="num" value="1"/>
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="net.dathoc.autotest.webappCases">
+				<methods>
+				<include name="checkGUI_combobox_test"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
